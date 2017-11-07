@@ -1,0 +1,39 @@
+[user]
+  name = Matt Weiden
+  email = something@something.com
+[push]
+  default = current
+[pull]
+  default = current
+[core]
+  excludesfile = ~/.gitignore
+  quotepath = false
+  editor = /usr/local/bin/vim
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[diff]
+  rename = copy
+  color = auto
+[apply]
+  whitespace = strip
+[pager]
+  color = true
+[status]
+  color = auto
+[alias]
+  co = "checkout"
+  ci = "commit"
+  b = "branch"
+  unmerge = "reset --hard ORIG_HEAD"
+  track = "branch --track"
+  unstage = reset HEAD
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  s = status
+[branch]
+  autosetuprebase = always
+[github]
+  user = mweiden
+[credential]
+  helper = osxkeychain
