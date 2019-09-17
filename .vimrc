@@ -57,7 +57,8 @@ let mapleader = " "
 set encoding=utf-8
 set history=1000
 set nocompatible            " don't need vi compatibility
-set visualbell              " stop the stupid sound
+set noerrorbells            " stop the stupid sound
+set novisualbell            " stop the stupid flash
 set backspace=indent,eol,start
 
 " search and navigation
