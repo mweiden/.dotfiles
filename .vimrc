@@ -12,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Bundle 'Lokaltog/powerline'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'wincent/Command-T'
 Bundle 'Lokaltog/powerline-fonts'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'JuliaLang/julia-vim'
@@ -22,6 +21,11 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-surround.git'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'uarun/vim-protobuf'
+
+call plug#begin('~/.vim/plugged')
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+call plug#end()
 " Bundle 'andreypopp/ensime'
 " Bundle 'jlc/envim'
 " Bundle 'jlc/ensime-common'
@@ -136,8 +140,7 @@ map <leader>a :Ack
 "map <leader>b :b
 map <leader>d :bd<CR>
 map <leader>o :o .<CR>
-map <leader>p :CommandT<CR>
-map <leader>b :CommandTBuffer<CR>
+map <leader>p :Files .<CR>
 map <leader>q :q<CR>
 "map <leader>s :w<CR>
 map <leader>vv :source ~/.vimrc<CR>
